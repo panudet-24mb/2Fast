@@ -73,7 +73,7 @@ exports.signin = (req, res) => {
         id: user.id,
         "user_meta" : UserData
       }, config.secret, {
-        expiresIn: 86400 // expires in 24 hours
+        expiresIn: 86400 // expires in 24 hours86400
       });
 
       res.status(200).send({
