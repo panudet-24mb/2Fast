@@ -18,7 +18,8 @@ verifyToken = (req, res, next) => {
         message: 'Fail to Authentication. Error -> ' + err
       });
     }
-    req.userId = decoded.id;
+      req.userData = decoded;
+
     next();
   });
 }

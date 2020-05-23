@@ -1,7 +1,7 @@
 const env = {
-  database: '2fast',
+  database: '2fast_auth',
   username: 'root',
-  password: '',
+  password: 'P@ssw0rd2020',
   host: 'localhost',
   dialect: 'mysql',
   pool: {

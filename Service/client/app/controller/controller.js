@@ -1,7 +1,7 @@
 exports.userContent = (req, res) => {
-  
-    res.status(500).json({
-        "meta_client" : "true"
+    let userData = req.userData
+    res.status(200).json({
+        "meta_client" : userData
     });
 
 }
