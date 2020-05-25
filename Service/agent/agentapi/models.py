@@ -17,7 +17,6 @@ class Vendor(models.Model):
   def __str__(self):
         return self.name
 
-
 class Project(models.Model):
   name = models.CharField(max_length=100)
   company = models.ForeignKey(Company, on_delete=models.CASCADE)
@@ -32,6 +31,7 @@ class Job(models.Model):
   desc = models.CharField(max_length=300)
   def __str__(self):
     return self.name
+
 
 
 
